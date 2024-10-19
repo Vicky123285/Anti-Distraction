@@ -1,0 +1,37 @@
+/* Optimized Dark Mode Styles */
+.dark-mode {
+    background-color: #1E1E2C; /* Dark background for body */
+    color: #E0E0E0; /* Light text color for readability */
+  }
+  
+  .dark-mode .settings {
+    background-color: #2A2A3D; /* Darker background for settings section */
+    color: #E0E0E0; /* Matching text color with the general body */
+  }
+  
+  .dark-mode .setting-option {
+    margin-bottom: 15px;
+    color: #E0E0E0; /* Text color for options */
+  }
+  
+  .dark-mode input[type="text"],
+  .dark-mode input[type="file"] {
+    background-color: #333; /* Dark input field background */
+    color: #E0E0E0; /* Light text color in input fields */
+    border: 1px solid #666; /* Subtle border color */
+  }
+  
+  .dark-mode button {
+    background-color: #FFD700; /* Gold button color */
+    color: #333; /* Contrast text color on buttons */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+  }
+  
+  .dark-mode button:hover {
+    background-color: #FFA500; /* Orange on hover */
+  }
+  

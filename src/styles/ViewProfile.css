@@ -1,0 +1,89 @@
+/* Profile Container Styles */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #2A2A3D; /* Background color consistent with dashboard */
+}
+
+/* Profile Card Styles */
+.profile-card {
+  background-color: #333; /* Dark background for the card */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 300px; /* Adjust width as needed */
+}
+
+/* Profile Image Styles */
+.profile-card-img {
+  width: 100px; /* Adjust size */
+  height: 100px; /* Adjust size */
+  border-radius: 50%; /* Circular image */
+  object-fit: cover; /* Cover to maintain aspect ratio */
+  margin-bottom: 15px; /* Space below the image */
+}
+
+/* Profile Card Name Styles */
+.profile-card-name {
+  color: #FFD700; /* Gold color for the name */
+  margin: 10px 0; /* Space above and below */
+}
+
+/* Profile Card Email and Bio Styles */
+.profile-card-email,
+.profile-card-bio {
+  color: #E0E0E0; /* Light grey color */
+  margin: 5px 0; /* Space above and below */
+}
+
+/* Input Styles */
+.profile-input,
+.profile-textarea {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding inside inputs */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  margin-bottom: 10px; /* Space below inputs */
+  background-color: #444; /* Background for inputs */
+  color: #E0E0E0; /* Text color */
+}
+
+/* File Input Styles */
+.profile-file-input {
+  margin-bottom: 10px; /* Space below file input */
+}
+
+/* Profile Skills List Styles */
+.profile-skills-list {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  margin: 10px 0; /* Space above and below */
+}
+
+/* Profile Skill Styles */
+.profile-skill {
+  background-color: #444; /* Darker background for skills */
+  color: #FFD700; /* Gold color for skills */
+  border-radius: 5px; /* Rounded corners */
+  padding: 5px 10px; /* Padding around skills */
+  margin: 5px; /* Space between skills */
+  display: inline-block; /* Align skills inline */
+}
+
+/* Button Styles */
+.profile-card-button {
+  padding: 10px 15px; /* Padding inside button */
+  border: none; /* No border */
+  background-color: #FFD700; /* Gold color for the button */
+  color: #333; /* Dark text color */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.profile-card-button:hover {
+  background-color: #FFA500; /* Change color on hover */
+}

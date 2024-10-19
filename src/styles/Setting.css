@@ -1,0 +1,103 @@
+/* General Settings Styles */
+.settings {
+    padding: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Setting Options */
+  .setting-option {
+    margin-bottom: 15px;
+  }
+  
+  .setting-option label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  .setting-option input[type="text"],
+  .setting-option input[type="file"] {
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    flex-grow: 1;
+    margin-left: 10px;
+  }
+  
+  /* Blocked Apps List */
+  .setting-option ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .setting-option li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .setting-option button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .setting-option button:hover {
+    background-color: var(--primary-dark-color);
+  }
+  
+  /* Save and Reset Buttons */
+  button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: var(--primary-dark-color);
+  }
+  
+  /* Dark Mode Styles */
+  .dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  .dark-mode input {
+    background-color: #1e1e1e;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+  }
+  
+  .dark-mode .setting-option button {
+    background-color: #bb86fc;
+  }
+  
+  .dark-mode .setting-option button:hover {
+    background-color: #3700b3;
+  }
+  

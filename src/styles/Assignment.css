@@ -1,0 +1,177 @@
+.assignment-page {
+  display: flex; /* Align the sidebar and content side by side */
+  background-color: #1f1f1f; /* Dark background color */
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent overflow of the sidebar */
+}
+
+.assignment-container {
+  max-width: 1200px; /* Increased width for better readability */
+  margin: 20px; /* Adjusted margin for spacing */
+  padding: 20px; /* Adjusted padding */
+  background-color: #333; /* Dark background for the assignment section */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly darker shadow for a cohesive look */
+  flex: 1; /* Ensures it takes available space next to the Sidebar */
+  overflow-y: auto; /* Enable vertical scrolling */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #ffcc00 #444; /* For Firefox scrollbar colors */
+}
+
+/* Custom Scrollbar Styles for Assignment Page */
+.assignment-container::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+.assignment-container::-webkit-scrollbar-thumb {
+  background-color: #232222; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+}
+
+.assignment-container::-webkit-scrollbar-track {
+  background-color: #444; /* Color of the scrollbar track */
+}
+
+.assignment-title {
+  text-align: center;
+  margin: 20px 0;
+  color: #ffcc00; /* Yellow for title */
+}
+
+h3, h4 {
+  color: #27c8a2; /* Yellow for headings */
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.info-section {
+  margin-bottom: 20px; /* Added margin for spacing */
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  background-color: #444; /* Dark gray for assignment items */
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 8px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #e0e0e0; /* Light gray for text */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow to lift the elements */
+}
+
+ul li.completed {
+  background-color: #28a745; /* Bright green for completed assignments */
+  text-decoration: line-through;
+  color: #ffffff; /* White for completed text */
+}
+
+.assignment-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.assignment-input input[type="text"],
+.assignment-input input[type="datetime-local"] {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #555; /* Dark border for input fields */
+  font-size: 16px;
+  background-color: #444; /* Dark background for inputs */
+  color: #e0e0e0; /* Light gray text */
+  width: calc(100% - 10px); /* Full width minus gap */
+}
+
+.assignment-input button {
+  padding: 12px 20px;
+  background-color: #1e51f5; /* Yellow button color */
+  color: #ffffff; /* Dark text */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.assignment-input button:hover {
+  background-color: #2837bb; /* Darker yellow on hover */
+}
+
+.assignments-list {
+  margin-top: 20px; /* Added margin for spacing */
+}
+
+.assignments-list button {
+  padding: 8px 12px;
+  background-color: #ffcc00; /* Yellow for actions related to tasks */
+  color: #333; /* Dark text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.assignments-list button:hover {
+  background-color: #ffa500; /* Darker yellow on hover */
+}
+
+.reminder {
+  color: #e74c3c; /* Red for reminders */
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 600px) {
+  .assignment-container {
+    padding: 15px;
+  }
+
+  .assignment-input {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .assignment-input input,
+  .assignment-input button {
+    width: 100%;
+  }
+
+  ul li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.assignment-priority-button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #ffcc00; /* Yellow for the priority button */
+  color: #1f1f1f; /* Dark text for the button */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.assignment-priority-button:hover {
+  background-color: #e0a800; /* Darker yellow on hover */
+}
+
+.assignment-tags,
+.assignment-priority {
+  margin-left: 10px; /* Spacing for tags and priority */
+  font-size: 14px; /* Smaller font for tags and priority */
+  color: #616161; /* Light gray text */
+}

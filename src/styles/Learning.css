@@ -1,0 +1,258 @@
+/* Learning Page Styles */
+.learning-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #1f1f1f; /* Dark background color */
+}
+
+/* Header Section Styles */
+.learning-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333; /* Dark background for header */
+}
+
+/* Logo Styles */
+.logo img {
+  width: 50px; /* Adjust logo size */
+  height: auto;
+}
+
+/* Page Title Styles */
+.page-title {
+  color: #ffcc00; /* Yellow color for title */
+  margin: 0; /* Remove default margin */
+}
+
+/* Profile Section Styles */
+.profile-section {
+  position: relative; /* For dropdown positioning */
+}
+
+/* Profile Icon Styles */
+.profile-icon img {
+  width: 40px; /* Adjust profile icon size */
+  border-radius: 50%; /* Circular profile image */
+}
+
+/* Profile Dropdown Styles */
+.profile-dropdown {
+  position: absolute;
+  top: 100%; /* Position below the icon */
+  right: 0; /* Align to the right */
+  background-color: #444; /* Dropdown background */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Shadow for dropdown */
+  list-style: none; /* Remove bullet points */
+  padding: 10px; /* Padding inside dropdown */
+  z-index: 100; /* Ensure dropdown appears above other elements */
+}
+
+/* Dropdown Item Styles */
+.profile-dropdown li {
+  color: #ffffff; /* Yellow color for dropdown items */
+  padding: 8px 10px; /* Padding for items */
+  cursor: pointer; /* Pointer cursor */
+}
+
+.profile-dropdown li:hover {
+  background-color: #555; /* Darker background on hover */
+}
+
+/* Learning Container Styles */
+.learning-container {
+  display: flex;
+  flex: 1;
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: calc(100vh - 100px); /* Adjust max-height based on header size */
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px; /* Set width of sidebar */
+  background-color: #2A2A3D; /* Sidebar background color */
+  color: #fff700; /* Yellow color for sidebar text */
+  padding: 20px; /* Padding inside sidebar */
+}
+
+/* Sidebar Header Styles */
+.sidebar-header {
+  margin: 0; /* Remove default margin */
+}
+
+/* Sidebar Links */
+.sidebar ul {
+  padding: 0; /* Remove padding */
+  list-style: none; /* Remove bullet points */
+}
+
+.sidebar li {
+  color: white;
+  margin: 15px 0; /* Space between links */
+}
+
+.sidebar a {
+  text-decoration: none; /* Remove underline from links */
+  color: #ffffff; /* Yellow color for links */
+}
+
+/* Sidebar Link Hover */
+.sidebar li:hover {
+  background-color: #555;
+}
+
+.sidebar a:hover {
+  color: #ffa500; /* Change color on hover */
+}
+
+/* Main Content Styles */
+.main-content {
+  flex: 1; /* Take remaining space */
+  padding: 20px; /* Padding inside main content */
+  background-color: #333; /* Dark background for main content */
+  color: #e0e0e0; /* Light gray color for text */
+}
+
+/* Enable vertical scrolling in main content */
+.main-content {
+  overflow-y: auto; /* Enable vertical scrolling if content is too large */
+}
+
+/* Custom Scrollbar Styles for Learning Page */
+.learning-container::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+.learning-container::-webkit-scrollbar-thumb {
+  background-color: #232222; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+}
+
+.learning-container::-webkit-scrollbar-track {
+  background-color: #444; /* Color of the scrollbar track */
+}
+
+/* Search Bar Styles */
+.custom-search-bar {
+  display: flex; /* Flexbox for search bar layout */
+  align-items: center; /* Center items vertically */
+  margin: 20px 0; /* Space above and below */
+}
+
+.search-input {
+  flex: 1; /* Take remaining space */
+  padding: 10px; /* Padding inside input */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #444; /* Background for input */
+  color: #e0e0e0; /* Text color */
+}
+
+/* Search Button Styles */
+.search-button {
+  padding: 10px 15px; /* Padding inside button */
+  border: none; /* No border */
+  background-color: #ffcc00; /* Yellow color for button */
+  color: #333; /* Dark text color */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.search-button:hover {
+  background-color: #ffa500; /* Change color on hover */
+}
+
+/* Task Calendar Styles */
+.task-calendar {
+  background-color: #444; /* Dark background for calendar section */
+  padding: 20px; /* Padding inside calendar section */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Shadow for calendar section */
+}
+
+/* Task Input Styles */
+.task-input {
+  display: flex; /* Flexbox for task input layout */
+  margin-top: 15px; /* Space above task input */
+}
+
+.task-input input {
+  flex: 1; /* Take remaining space */
+  padding: 10px; /* Padding inside input */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #444; /* Background for input */
+  color: #e0e0e0; /* Text color */
+}
+
+/* Task List Styles */
+.task-list {
+  margin-top: 20px; /* Space above task list */
+}
+
+.task-list ul {
+  padding: 0; /* Remove padding */
+  list-style: none; /* Remove bullet points */
+}
+
+.task-list li {
+  color: #ffcc00; /* Yellow color for task text */
+  margin: 5px 0; /* Space between tasks */
+}
+
+/* Task List Button Styles */
+.task-list button {
+  margin-left: 10px; /* Space between buttons */
+  padding: 5px 10px; /* Padding inside buttons */
+  background-color: #ffcc00; /* Yellow color for buttons */
+  color: #333; /* Dark text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+}
+
+.task-list button:hover {
+  background-color: #ffa500; /* Change color on hover */
+}
+
+/* Learning Sections Styles */
+.learning-sections {
+  margin-top: 20px; /* Space above learning sections */
+}
+
+.learning-sections .section {
+  background-color: #444; /* Dark background for sections */
+  padding: 20px; /* Padding inside sections */
+  border-radius: 10px; /* Rounded corners */
+  margin-bottom: 20px; /* Space below sections */
+}
+
+.learning-sections h3 {
+  color: #fff700; /* Yellow color for section headers */
+  margin: 0; /* Remove default margin */
+}
+
+.learning-sections p {
+  color: #e0e0e0; /* Light gray color for section text */
+}
+
+/* FAQ Icon Styles */
+.faq-icon {
+  margin-top: auto; /* Push it to the bottom of the sidebar */
+}
+
+.faq-icon a {
+  display: flex; /* Align icon and text */
+  align-items: center; /* Center vertically */
+  padding: 10px; /* Add padding */
+  color: inherit; /* Inherit color */
+  text-decoration: none; /* Remove underline */
+}
+
+.faq-icon i {
+  margin-right: 10px; /* Space between icon and text */
+}

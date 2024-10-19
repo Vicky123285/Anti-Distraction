@@ -1,0 +1,179 @@
+/* Notes Page General Styling */
+.notes-page {
+  display: flex; /* Align the sidebar and content side by side */
+  background-color: #1f1f1f; /* Dark background color */
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent overflow of the sidebar */
+}
+
+.notes-container {
+  max-width: 1200px; /* Width for better readability */
+  margin: 20px; /* Spacing around the notes container */
+  padding: 20px; /* Padding inside the notes container */
+  background-color: #333; /* Dark background for the notes section */
+  border-radius: 10px; /* Rounded corners for a smoother look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  flex: 1; /* Take up available space next to Sidebar */
+  overflow-y: scroll; /* Vertical scrolling enabled */
+  scrollbar-width: thin; /* For Firefox scrollbar */
+  scrollbar-color: #ffcc00 #444; /* Custom scrollbar colors */
+}
+
+/* Custom Scrollbar Styles for Notes Page */
+.notes-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.notes-container::-webkit-scrollbar-thumb {
+  background-color: #232222;
+  border-radius: 10px;
+}
+
+.notes-container::-webkit-scrollbar-track {
+  background-color: #444;
+}
+
+.notes-title {
+  text-align: center;
+  margin: 20px 0;
+  color: #ffcc00; /* Yellow for title */
+  font-family: 'Arial', sans-serif;
+}
+
+.welcome-message {
+  text-align: center;
+  color: #e0e0e0; /* Light gray for welcome text */
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+  font-size: 24px; /* Enlarged font size */
+  font-weight: bold;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  background-color: #444;
+  border: 1px solid #555;
+  color: #e0e0e0;
+  font-size: 16px;
+}
+
+/* Notes List Styling */
+.notes-list {
+  margin-top: 20px;
+}
+
+.notes-list ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.notes-list ul li {
+  background-color: #444; /* Dark gray for note items */
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #e0e0e0; /* Light gray for text */
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.notes-list ul li.completed {
+  background-color: #28a745; /* Bright green for completed notes */
+  text-decoration: line-through;
+  color: #ffffff; /* White for completed text */
+}
+
+.note-content {
+  flex: 1; /* Ensure it takes available space */
+  margin-right: 10px;
+}
+
+.note-tags,
+.note-priority,
+.note-dueDate {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #616161; /* Lighter gray for tags and priority */
+}
+
+/* Note Input Styling */
+.note-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.note-input textarea {
+  width: calc(100% - 10px);
+  padding: 12px;
+  border-radius: 6px;
+  background-color: #444;
+  border: 1px solid #555;
+  color: #e0e0e0;
+  font-size: 16px;
+}
+
+.note-input input,
+.note-input select {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #555;
+  background-color: #444;
+  color: #e0e0e0;
+  font-size: 16px;
+  width: calc(100% - 10px);
+}
+
+.note-input button {
+  padding: 12px 20px;
+  background-color: #1e51f5;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.note-input button:hover {
+  background-color: #2837bb;
+}
+
+/* Reminder Styling */
+.reminder {
+  color: #e74c3c; /* Red for reminders */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 600px) {
+  .notes-container {
+    padding: 15px;
+  }
+
+  .note-input {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .note-input textarea,
+  .note-input input,
+  .note-input button {
+    width: 100%;
+  }
+
+  .notes-list ul li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
